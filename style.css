@@ -74,6 +74,9 @@ header a:hover{
 	color: #055A05;
 	cursor: pointer;
 }
+header .hamburger{
+	display: none;
+}
 #hero{
 	background: #E9F3E3;
 	float: left;
@@ -491,7 +494,6 @@ footer a:hover{
 		header button.hamburger:hover {
 		    color: #54B847; /* Change color on hover */
 		}
-
 
 		/* Hamburger menu icon animation */
 		header button.hamburger::before {
