@@ -45,13 +45,13 @@ header ul.nav li{
 	font-size: 1.3rem;
 	margin: 0 0 0 50px;
 }
-header ul.nav li.button{
+header ul.nav li.book{
 	background: #022602;
 	color: #ffffff;
 	border-radius: 3px;
 	padding: 10px 18px 12px 18px;
 }
-header ul.nav li.button:hover{
+header ul.nav li.book:hover{
 	background: #054A05;
 	cursor: pointer;
 	transition: background 0.3s ease-in-out;
@@ -62,7 +62,6 @@ header ul.nav li.button a{
 header ul.nav li.button {
     display: none; /* Hide button by default */
 }
-
 header ul.nav li.button a {
     color: #ffffff;
 }
@@ -477,40 +476,40 @@ footer a:hover{
 		margin-bottom: 5px;
 	}
 	/* Hamburger menu button styles */
-header button.hamburger{
-    display: block;
-    background: none;
-    border: none;
-    color: #022602;
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    float: right;
-}
+		header button.hamburger{
+		    display: block;
+		    background: none;
+		    border: none;
+		    color: #022602;
+		    font-size: 1.5rem;
+		    padding: 10px;
+		    cursor: pointer;
+		    transition: color 0.3s ease-in-out;
+		    float: right;
+		}
 
-header button.hamburger:hover {
-    color: #54B847; /* Change color on hover */
-}
+		header button.hamburger:hover {
+		    color: #54B847; /* Change color on hover */
+		}
 
 
-/* Hamburger menu icon animation */
-header button.hamburger::before {
-    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
+		/* Hamburger menu icon animation */
+		header button.hamburger::before {
+		    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+		}
 
-header button.hamburger::after {
-    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
+		header button.hamburger::after {
+		    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+		}
 
-/* Hamburger menu icon animation when active */
-header ul.nav.show + button.hamburger::before {
-    transform: rotate(45deg) translate(4px, 5px);
-    margin: 0; /* Adjust spacing */
-}
+		/* Hamburger menu icon animation when active */
+		header ul.nav.show + button.hamburger::before {
+		    transform: rotate(45deg) translate(4px, 5px);
+		    margin: 0; /* Adjust spacing */
+		}
 
-header ul.nav.show + button.hamburger::after {
-    transform: rotate(-45deg) translate(4px, -5px);
-    margin: 0; /* Adjust spacing */
-}
+		header ul.nav.show + button.hamburger::after {
+		    transform: rotate(-45deg) translate(4px, -5px);
+		    margin: 0; /* Adjust spacing */
+		}
 }
