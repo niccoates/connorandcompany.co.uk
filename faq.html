@@ -22,6 +22,7 @@
             <div class="logo">
                 <a href="/"><img src="/images/logo.png" alt="Connor & Company Logo" /></a>
             </div>
+            <button class="hamburger" onclick="toggleNav()">☰</button>
             <ul class="nav">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
@@ -84,6 +85,13 @@
             </div>
         </div>
     </footer>
+
+        <script>
+        function toggleNav() {
+        var nav = document.querySelector('header ul.nav');
+            nav.classList.toggle('show');
+        }
+    </script>
     
 </body>
 </html>

@@ -59,6 +59,13 @@ header ul.nav li.button:hover{
 header ul.nav li.button a{
 	color: #ffffff;
 }
+header ul.nav li.button {
+    display: none; /* Hide button by default */
+}
+
+header ul.nav li.button a {
+    color: #ffffff;
+}
 header a{
 	color: #022602;
 	text-decoration: none;
@@ -67,6 +74,43 @@ header a{
 header a:hover{
 	color: #055A05;
 	cursor: pointer;
+}
+/* Hamburger menu button styles */
+header button.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #022602;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    float: right;
+}
+
+header button.hamburger:hover {
+    color: #54B847; /* Change color on hover */
+}
+
+
+/* Hamburger menu icon animation */
+header button.hamburger::before {
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+header button.hamburger::after {
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+/* Hamburger menu icon animation when active */
+header ul.nav.show + button.hamburger::before {
+    transform: rotate(45deg) translate(4px, 5px);
+    margin: 0; /* Adjust spacing */
+}
+
+header ul.nav.show + button.hamburger::after {
+    transform: rotate(-45deg) translate(4px, -5px);
+    margin: 0; /* Adjust spacing */
 }
 #hero{
 	background: #E9F3E3;
@@ -360,4 +404,113 @@ footer a{
 footer a:hover{
 	text-decoration: underline;
 	cursor: pointer;
+}
+
+@media (max-width: 575.98px) { 
+	.container, .container-sm{
+		width: 360px;
+	}
+	header ul.nav {
+        display: none; /* Hide navigation by default on small screens */
+    }
+
+    header ul.nav.show {
+        display: block; /* Show navigation when active */
+    }
+
+    header ul.nav.show li {
+        display: block; /* Show list items vertically */
+        margin: 10px 0; /* Adjust margin for list items */
+    }
+
+    header ul.nav li.button {
+        display: inline-block; /* Show button as inline-block */
+    }
+    #hero img{
+    	display: none;
+    }
+	 #hero .left{
+		width: 100%;
+		float: left;
+	}
+	#hero .right{
+		width: 100%;
+		float: left;
+	}
+	#hero h1{
+		color: #0A3F27;
+		font-size: 3rem;
+	}
+	#testimonial span, #testimonial-2 span{
+		position: absolute;
+		font-size: 3rem;
+		color: #ffffff;
+		margin-top: -30px;
+		margin-left: 5px;
+	}
+	#testimonial h2, #testimonial-2 h2{
+		color: #ffffff;
+		font-size: 2rem;
+		font-weight: 300;
+		letter-spacing: 0.08rem;
+	}
+	#testimonial .left{
+		width: 100%;
+		float: left;
+	}
+	#testimonial .right{
+		width: 100%;
+		text-align: left;
+		font-size: 1.3rem;
+		margin-top: 30px;
+	}
+	#testimonial-2 .right{
+		width: 100%;
+	}
+	#testimonial-2 .left{
+		width: 100%;
+		font-size: 1.3rem;
+		margin-bottom: 50px;
+	}
+	footer .left{
+		width: 100%;
+		float: left;
+	}
+	footer .right{
+		width: 100%;
+		float: left;
+	}
+	footer .family{
+		font-size: 2rem;
+		font-weight: 300;
+		color: #0A3F27;
+		width: 320px;
+		line-height: 2.2rem;
+		letter-spacing: 0.05rem;
+		margin: 0 0 30px 0;
+		border-left: 3px solid #0A3F27;
+		padding-left: 20px;
+	}
+	footer .copyright{
+		font-size: 1.2rem;
+		font-weight: 500;
+		color: #1f2937;
+		margin-top: 40px;
+	}
+	footer .elmhurst{
+		float: left;
+		margin-top: 30px;
+	}
+	footer ul.links{
+		float: left;
+		list-style: none;
+		margin-top: 10px;
+	}
+	footer ul.links li{
+		display: block;
+		font-size: 1.2rem;
+		color: #6b7280;
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
 }
