@@ -75,43 +75,6 @@ header a:hover{
 	color: #055A05;
 	cursor: pointer;
 }
-/* Hamburger menu button styles */
-header button.hamburger {
-    display: block;
-    background: none;
-    border: none;
-    color: #022602;
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    float: right;
-}
-
-header button.hamburger:hover {
-    color: #54B847; /* Change color on hover */
-}
-
-
-/* Hamburger menu icon animation */
-header button.hamburger::before {
-    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
-
-header button.hamburger::after {
-    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
-
-/* Hamburger menu icon animation when active */
-header ul.nav.show + button.hamburger::before {
-    transform: rotate(45deg) translate(4px, 5px);
-    margin: 0; /* Adjust spacing */
-}
-
-header ul.nav.show + button.hamburger::after {
-    transform: rotate(-45deg) translate(4px, -5px);
-    margin: 0; /* Adjust spacing */
-}
 #hero{
 	background: #E9F3E3;
 	float: left;
@@ -513,4 +476,41 @@ footer a:hover{
 		margin-left: 0;
 		margin-bottom: 5px;
 	}
+	/* Hamburger menu button styles */
+header button.hamburger{
+    display: block;
+    background: none;
+    border: none;
+    color: #022602;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    float: right;
+}
+
+header button.hamburger:hover {
+    color: #54B847; /* Change color on hover */
+}
+
+
+/* Hamburger menu icon animation */
+header button.hamburger::before {
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+header button.hamburger::after {
+    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+/* Hamburger menu icon animation when active */
+header ul.nav.show + button.hamburger::before {
+    transform: rotate(45deg) translate(4px, 5px);
+    margin: 0; /* Adjust spacing */
+}
+
+header ul.nav.show + button.hamburger::after {
+    transform: rotate(-45deg) translate(4px, -5px);
+    margin: 0; /* Adjust spacing */
+}
 }
