@@ -15,6 +15,9 @@ body, html{
   color: #022602;
   background: #ffffff;
 }
+a{
+	color: #055A05;
+}
 .container{ 
 	width: 1024px;
 	margin: 0 auto; 
@@ -124,6 +127,35 @@ header a:hover{
 	font-size: 1.9rem;
 	margin: 0 0 20px 0;
 }
+#content h4{
+	font-size: 1.7rem;
+	margin: 0 0 20px 0;
+}
+#content h4.question{
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding-top: 15px;
+}
+#content p.answer{
+	color: #4b5563;
+	font-size: 1.4rem;
+	margin-top: 20px;
+	line-height: 1.8rem;
+}
+#content ul.faq{
+	margin: -20px 0 0 0;
+	padding: 0 0 0 40px;
+	color: #4b5563;
+}
+#content ul.faq li{
+	color: #4b5563;
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 7px 0;
+	line-height: 1.8rem;
+}
 .divider{
 	width: 120px;
 	background: #f3f4f6;
@@ -200,6 +232,83 @@ header a:hover{
 	cursor: pointer;
 	transition: background 0.3s ease-in-out;
 }
+#joinForm{
+	width: 100%;
+	float: left;
+	margin-top: -20px;
+}
+#joinForm .row{
+	width: 100%;
+	padding: 10px 0;
+	float: left;
+}
+#joinForm label{
+	display: block;
+	width: 100%;
+	font-size: 1.1rem;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+#joinForm .form-input{
+	width: 70%;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #d1d5db;
+	font-size: 1.2rem;
+	padding: 8px 10px;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+#joinForm .form-input:focus{
+	border: 2px solid #059669;
+	padding: 7px 9px;
+}
+#joinForm .form-textbox{
+	width: 70%;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #d1d5db;
+	font-size: 1.2rem;
+	padding: 8px 10px;
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+#joinForm .form-textbox:focus{
+	border: 2px solid #059669;
+	padding: 7px 9px;
+}
+#joinForm .button{
+	border-radius: 4px;
+	background: #047857;
+	border: 0;
+	font-size: 1rem;
+	padding: 10px;
+	color: #ecfdf5;
+	transition: background 0.3s ease-in-out;
+}
+#joinForm .button:hover{
+	background: #059669;
+	cursor: pointer;
+}
+#form-response{
+	display: none;
+	width: 100%;
+	float: left;
+	background: #f0fdf4;
+	border-radius: 2px;
+	padding: 20px;
+	font-size: 1.2rem;
+	color: #14532d;
+}
+ .faq-item {
+    margin-bottom: 20px;
+  }
+  .faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .faq-answer {
+    display: none;
+  }
 footer{
 	padding: 80px 0 40px 0;
 	float: left;
