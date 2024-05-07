@@ -54,7 +54,7 @@ header ul.nav li.book{
 header ul.nav li.book:hover{
 	background: #054A05;
 	cursor: pointer;
-	transition: background 0.3s ease-in-out;
+	transition: background 0.1s ease-in-out;
 }
 header ul.nav li.button a{
 	color: #ffffff;
@@ -68,7 +68,7 @@ header ul.nav li.button a {
 header a{
 	color: #022602;
 	text-decoration: none;
-	transition: color 0.3s ease-in-out;
+	transition: color 0.1s ease-in-out;
 }
 header a:hover{
 	color: #055A05;
@@ -111,10 +111,21 @@ header .hamburger{
 #hero .button-solid{
 	margin: 30px 0 0 0;
 	display: block;
-	width: 300px;
+	width: 200px;
 	text-align: center;
 	padding: 17px 15px;
 	font-size: 1.4rem;
+	background: #022602;
+	color: #ffffff;
+	border-radius: 3px;
+	padding: 10px 18px 12px 18px;
+	text-decoration: none;
+	transition: background 0.1s ease-in-out;
+}
+#hero .button-solid:hover{
+	background: #054A05;
+	color: #ffffff;
+	cursor: pointer;
 }
 #content{
 	width: 100%;
@@ -131,6 +142,16 @@ header .hamburger{
 	font-weight: 300;
 	margin: 0 0 30px 0;
 	line-height: 2.2rem;
+}
+#content a{
+	color: #055A05;
+	font-size: 1.5rem;
+	text-decoration: none;
+	font-weight: 600;
+}
+#content a:hover{
+	color: #022602;
+	cursor: pointer;
 }
 #content h3{
 	font-size: 1.9rem;
@@ -153,9 +174,26 @@ header .hamburger{
 	margin-top: 20px;
 	line-height: 1.8rem;
 }
+#content ul{
+	list-style: none;
+	padding: 0;
+}
+#content ul li{
+	padding: 5px 0;
+	font-size: 1.5rem;
+	color: #022602;
+	font-weight: 300;
+	line-height: 2.2rem;
+}
+#content ul li svg{
+	height: 25px;
+	vertical-align: middle;
+	fill: #15803d;
+	margin-right: 15px;
+}
 #content ul.faq{
 	margin: -20px 0 0 0;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 20px;
 	color: #4b5563;
 }
 #content ul.faq li{
@@ -163,7 +201,10 @@ header .hamburger{
 	font-size: 1.4rem;
 	font-weight: 300;
 	padding: 7px 0;
-	line-height: 1.8rem;
+	line-height: 2rem;
+}
+#content ul.faq li strong{
+	display: block;
 }
 .divider{
 	width: 120px;
@@ -224,7 +265,7 @@ header .hamburger{
 	font-weight: 300;
 	letter-spacing: 0.08rem;
 }
-.button-solid{
+#content .button-solid{
 	background: #022602;
 	color: #ffffff;
 	border-radius: 3px;
@@ -235,11 +276,12 @@ header .hamburger{
 	width: 180px;
 	text-align: center;
 	margin: 10px 0 30px 0;
+	transition: background 0.1s ease-in-out;
 }
-.button-solid:hover{
+#content .button-solid:hover{
 	background: #054A05;
+	color: #ffffff;
 	cursor: pointer;
-	transition: background 0.3s ease-in-out;
 }
 #joinForm{
 	width: 100%;
@@ -291,7 +333,7 @@ header .hamburger{
 	font-size: 1rem;
 	padding: 10px;
 	color: #ecfdf5;
-	transition: background 0.3s ease-in-out;
+	transition: background 0.1s ease-in-out;
 }
 #joinForm .button:hover{
 	background: #059669;
@@ -346,7 +388,7 @@ footer .copyright{
 	font-size: 1.2rem;
 	font-weight: 500;
 	color: #1f2937;
-	margin-top: 40px;
+	margin-top: 140px;
 }
 footer .elmhurst{
 	float: right;
@@ -487,7 +529,7 @@ footer a:hover{
 		    font-size: 1.5rem;
 		    padding: 10px;
 		    cursor: pointer;
-		    transition: color 0.3s ease-in-out;
+		    transition: color 0.1s ease-in-out;
 		    float: right;
 		}
 
@@ -497,11 +539,11 @@ footer a:hover{
 
 		/* Hamburger menu icon animation */
 		header button.hamburger::before {
-		    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+		    transition: transform 0.1s ease-in-out, margin 0.1s ease-in-out;
 		}
 
 		header button.hamburger::after {
-		    transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
+		    transition: transform 0.1s ease-in-out, margin 0.1s ease-in-out;
 		}
 
 		/* Hamburger menu icon animation when active */
