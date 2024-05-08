@@ -206,6 +206,28 @@ header .hamburger{
 #content ul.faq li strong{
 	display: block;
 }
+.quote{
+	width: 100%;
+	color: #4b5563;
+}
+.quote .marks{
+	display: block;
+	position: absolute;
+	font-size: 5rem;
+	color: #87AF9D;
+	margin: -30px 0 0 -35px;
+}
+.quote .text{
+	color: #4b5563;
+	font-size: 2.4rem;
+	display: block;
+}
+.quote .source{
+	font-size: 1.5rem;
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
 .divider{
 	width: 120px;
 	background: #f3f4f6;
