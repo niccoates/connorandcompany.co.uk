@@ -136,6 +136,10 @@ header .hamburger{
 	width: 740px;
 	margin: 0 auto;
 }
+#content .text-sm{
+	font-size: 1.7rem;
+	font-weight: 500;
+}
 #content .left{
 	width: 284px;
 	float: left;
@@ -501,7 +505,7 @@ footer .email{
 	}
 	#hero h1{
 		color: #0A3F27;
-		font-size: 3rem;
+		font-size: 2.6rem;
 	}
 	#testimonial span, #testimonial-2 span{
 		position: absolute;
