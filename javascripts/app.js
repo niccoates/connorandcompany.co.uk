@@ -1,5 +1,5 @@
 var form = document.getElementById('joinForm');
-var url = 'https://ys4gs1d8oj.execute-api.eu-west-1.amazonaws.com/prod/connorandco';
+var url = 'https://kn20faihs8.execute-api.eu-west-2.amazonaws.com/prod/epc-submit';
 var formResponse = document.getElementById('form-response')
 var submit = document.getElementById('submit')
 
@@ -36,9 +36,9 @@ var payload = {
     name: form.name.value,
     agent: form.agent.value,
     email: form.email.value,
-    contact: form.contact.value,
+    contact: form.number.value,
     address: form.address.value,
-    notes: form.notes.value
+    notes: form.info.value
   }
   post(url, payload, function (err, res) {
     if (err) { return error(err) }
