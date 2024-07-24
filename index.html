@@ -54,7 +54,7 @@
             <div class="right">
                 <p class="text-sm">Connor and Co. was established in 2010 by Victoria Connor. Since then, it has grown to become a successful, local family-run business.</p>
                 <p>We specialise in energy performance certificates (EPCs) and cover Cheltenham and the surrounding areas.</p>
-                <p>Our team of fully qualified, highly experienced male and female assessors offer a speedy, professional, and friendly service. </p>
+                <p>Our team of fully qualified, highly experienced male and female assessors offer a speedy, professional and friendly service. </p>
             </div>
         </div>
     </div>
@@ -63,7 +63,8 @@
         <div class="container">
             <div class="left">
                 <span>“</span>
-                <h2>Always a great service, quick responses and going that extra mile for any last minutes request.</h2>
+                <h2>Always a great service, quick responses and going that extra mile for any last minute request. </h2>
+                <span class="mark-end">&#x301E</span>
             </div>
             <div class="right">
                 CGT Lettings
@@ -75,7 +76,7 @@
         <div id="content">
         <div id="services" class="container-sm">
             <h3>What is an Energy Performance Certificate?</h3>
-            <p>An EPC (Energy Performance Certificate) is a legal document required when a property is built, sold or rented.</p>
+            <p>An EPC (Energy Performance Certificate) is a legal document required when a property is built, sold or let.</p>
             <p>The certificate will outline how energy efficient a building is and give it a rating from A (very efficient) to G (inefficient). This is shown as a coloured bar chart, similar to those on newer electrical appliances.</p>
             <p><strong>This rating will consider the property's energy performance (the fabric) and its services (heating, lighting, hot water etc).</strong></p>
             <p>In addition to this, the EPC document will also show:</p>
@@ -88,7 +89,9 @@
             <span class="divider"></span>
                 <div class="quote">
                     <span class="marks">“</span>
+                    <span class="mark-end">&#x301E</span>
                     <span class="text">We have been using Connor & Co for a few years now. I wouldn’t go anywhere else.</span>
+
                     <span class="source">People Potential Possibilities</span>
                     <a href="https://www.p3charity.org/" class="link">www.p3charity.org</a>
                 </div>
@@ -111,6 +114,7 @@
             <div class="right">
                 <span>“</span>
                 <h2>Always professional, efficient and  reliable. Would not hesitate to recommend them to others.</h2>
+                <span class="mark-end">&#x301E</span>
             </div>
         </div>
     </div>
@@ -138,20 +142,28 @@
     </footer>
 
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        const headerHeight = document.querySelector('header').offsetHeight; // Get the height of the fixed header
+        const targetId = this.getAttribute('href').substring(1); // Get target ID without the '#'
+        const targetElement = document.getElementById(targetId); // Get the target element
+
+        if (targetElement) {
+            const offsetTop = targetElement.getBoundingClientRect().top + window.pageYOffset; // Get the absolute top position of the target element
+            const adjustedTop = offsetTop - headerHeight; // Adjust for the fixed header height
+
+            // Smooth scroll to the adjusted position
+            window.scrollTo({
+                top: adjustedTop,
+                behavior: 'smooth'
             });
-        });
 
-        function toggleNav() {
-        var nav = document.querySelector('header ul.nav');
-            nav.classList.toggle('show');
+            // Optionally, adjust margin-top of the target element to account for fixed header
+            targetElement.style.marginTop = headerHeight + 'px';
         }
+    });
     </script>
     
 </body>

@@ -232,12 +232,21 @@ header .hamburger{
 	position: absolute;
 	font-size: 5rem;
 	color: #87AF9D;
-	margin: -30px 0 0 -35px;
+	margin: -30px 0 0 -50px;
+}
+.quote .mark-end{
+	display: block;
+	float: right;
+	position: relative;
+	font-size: 5rem;
+	color: #87AF9D;
+	margin: 40px 0 0 0;
 }
 .quote .text{
-	color: #4b5563;
+	color: #022602;
 	font-size: 2.4rem;
 	display: block;
+	font-weight: 600;
 }
 .quote .source{
 	font-size: 1.5rem;
@@ -268,6 +277,22 @@ header .hamburger{
 }
 #testimonial a:hover, #testimonial-2 a:hover{
 	text-decoration: underline;
+}
+#testimonial .mark-end{
+	display: inline-block;
+	float: right;
+	position: relative;
+	font-size: 4rem;
+	color: #ffffff;
+	margin: -40px -50px -60px 0;
+}
+#testimonial-2 .mark-end{
+	display: inline-block;
+	float: right;
+	position: relative;
+	font-size: 4rem;
+	color: #ffffff;
+	margin: -35px 40px -60px 0;
 }
 #testimonial .left{
 	width: 60%;
