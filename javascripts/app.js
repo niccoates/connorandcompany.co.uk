@@ -36,7 +36,7 @@ var payload = {
     name: form.name.value,
     agent: form.agent.value,
     email: form.email.value,
-    contact: form.number.value,
+    number: form.number.value,
     address: form.address.value,
     notes: form.info.value
   }
