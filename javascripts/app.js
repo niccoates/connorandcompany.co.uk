@@ -38,7 +38,7 @@ var payload = {
     email: form.email.value,
     number: form.number.value,
     address: form.address.value,
-    notes: form.info.value
+    info: form.info.value
   }
   post(url, payload, function (err, res) {
     if (err) { return error(err) }
