@@ -1,123 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes"
+        />
 
-    <meta name="author" content="Nic Coates" />
-    <meta name="description" content="Unlock your property's potential with expert Energy Performance Certificates (EPC) from Connor & Company. Trusted local family-run business since 2010. Get your EPC today!">
-    <meta name="title" content="Energy Performance Certificates (EPC) | Connor & Company">
-    <link rel="canonical" href="https://www.connorandcompany.co.uk">
+        <meta name="author" content="Nic Coates" />
+        <meta
+            name="description"
+            content="Unlock your property's potential with expert Energy Performance Certificates (EPC) from Connor & Company. Trusted local family-run business since 2010. Get your EPC today!"
+        />
+        <meta
+            name="title"
+            content="Energy Performance Certificates (EPC) | Connor & Company"
+        />
+        <link rel="canonical" href="https://www.connorandcompany.co.uk" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="/images/icon.png">
-    <title>Energy Performance Certificates (EPC) | Connor & Company</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/"><img src="/images/logo.png" alt="Connor & Company Logo" /></a>
-            </div>
-            <button class="hamburger" onclick="toggleNav()">☰</button>
-            <ul class="nav">
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#about">About</a></li>
-                <li><a href="faq">FAQ</a></li>
-                <li><a href="/#contact">Contact</a></li>
-                <a href="/book-epc"><li class="book">Book Now</li></a>
-            </ul>
-        </div>
-    </header>
-
-    <div id="content">
-        <div class="container-sm">
-            <h3>Book Your Energy Performance Certificate (EPC) Now!</h3>
-            <p>Looking to sell, rent, or improve your property's energy efficiency? Our quick and hassle-free EPC service has you covered!</p>
-            <p>Curious about the assessment process? Visit our <a href="/faq">FAQ</a> page to learn more!</p>
-            <span class="divider"></span>
-            <form id="joinForm">
-                <div class="row">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-input" required>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" type="image/png" href="/images/icon.png" />
+        <title>Energy Performance Certificates (EPC) | Connor & Company</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/"
+                        ><img
+                            src="/images/logo.png"
+                            alt="Connor & Company Logo"
+                    /></a>
                 </div>
-                        <div class="row">
-                            <label>Agent</label>
-                            <input type="text" id="agent" name="agent" class="form-input" required>
-                        </div>
-                        <div class="row">
-                            <label>Email</label>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                        </div>
-                        <div class="row">
-                            <label>Contact Number</label>
-                            <input type="text" id="number" name="number" class="form-input">
-                        </div>
-                        <div class="row">
-                            <label>Address</label>
-                            <textarea name="address" id="address" class="form-textbox" rows="4" required></textarea>
-                        </div>
-                        <div class="row">
-                            <label>Additional information</label>
-                            <textarea name="info" name="address" class="form-textbox" rows="4"></textarea>
-                        </div>
-    
-                     <div class="row">
-                            <button type="submit" class="button" id="submit">Place order →</button>
-                     </div>
-            </form>
-        <div id="form-response">
-           
-        </div>
-    </div>
-    </div>
-
-      <div id="testimonial">
-        <div class="container">
-            <div class="left">
-                <span>“</span>
-                <h2>For years, we've recommended Connor & Co. Exemplary service from Vicky and excellent client feedback.</h2>
-            </div>
-            <div class="right">
-                Peter Ball & Co
-                <a href="https://www.peterball.co.uk/" target="_blank">www.peterball.co.uk</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="left" id="contact">
-                <p class="title">Contact</p>
-                <p class="phone">07799 266543 &middot; 01242 524242</p>
-                <p class="email"><a href="mailto:victoria@connorandcompany.co.uk">victoria@connorandcompany.co.uk</a></p>
-                <p class="copyright">© 2024 Connor and Company Ltd.</p>
-            </div>
-            <div class="right">
-                <div class="elmhurst">
-                    <img src="/images/elmhurst.png" alt="Elmhurst Energy" />
-                </div>
-                <ul class="links">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="/book-epc">Book Now</a></li>
-                    <li>Website by <strong><a href="https://www.cleeve.design">Cleeve Design</a></strong></li>
+                <button class="hamburger" onclick="toggleNav()">☰</button>
+                <ul class="nav">
+                    <li><a href="/#services">Services</a></li>
+                    <li><a href="/#about">About</a></li>
+                    <li><a href="faq">FAQ</a></li>
+                    <li><a href="/#contact">Contact</a></li>
+                    <a href="/book-epc"><li class="book">Book Now</li></a>
                 </ul>
             </div>
-        </div>
-    </footer>
+        </header>
 
-    <script src="/javascripts/app.js" type="text/javascript"></script>
-    <script>
-        function toggleNav() {
-        var nav = document.querySelector('header ul.nav');
-            nav.classList.toggle('show');
-        }
-    </script>
-    
-</body>
+        <div id="content">
+            <div class="container-sm">
+                <h3>Book Your Energy Performance Certificate (EPC) Now!</h3>
+                <p>
+                    Looking to sell, rent, or improve your property's energy
+                    efficiency? Our quick and hassle-free EPC service has you
+                    covered!
+                </p>
+                <p>
+                    Curious about the assessment process? Visit our
+                    <a href="/faq">FAQ</a> page to learn more!
+                </p>
+                <span class="divider"></span>
+                <form id="joinForm">
+                    <div class="row">
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    <div class="row">
+                        <label>Agent</label>
+                        <input
+                            type="text"
+                            id="agent"
+                            name="agent"
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    <div class="row">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-input"
+                            required
+                        />
+                    </div>
+                    <div class="row">
+                        <label>Contact Number</label>
+                        <input
+                            type="text"
+                            id="number"
+                            name="number"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="row">
+                        <label>Address</label>
+                        <textarea
+                            name="address"
+                            id="address"
+                            class="form-textbox"
+                            rows="4"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="row">
+                        <label>Additional information</label>
+                        <textarea
+                            name="info"
+                            name="address"
+                            class="form-textbox"
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <div class="row">
+                        <button type="submit" class="button" id="submit">
+                            Place order →
+                        </button>
+                    </div>
+                </form>
+                <div id="form-response"></div>
+            </div>
+        </div>
+
+        <div id="testimonial">
+            <div class="container">
+                <div class="left">
+                    <span>“</span>
+                    <h2>
+                        For years, we've recommended Connor & Co. Exemplary
+                        service from Vicky and excellent client feedback.
+                    </h2>
+                </div>
+                <div class="right">
+                    Peter Ball & Co
+                    <a href="https://www.peterball.co.uk/" target="_blank"
+                        >www.peterball.co.uk</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="left" id="contact">
+                    <p class="title">Contact</p>
+                    <p class="phone">07799 266543 &middot; 01242 524242</p>
+                    <p class="email">
+                        <a href="mailto:victoria@connorandcompany.co.uk"
+                            >victoria@connorandcompany.co.uk</a
+                        >
+                    </p>
+                    <p class="copyright">© 2024 Connor and Company Ltd.</p>
+                </div>
+                <div class="right">
+                    <div class="elmhurst">
+                        <img src="/images/elmhurst.png" alt="Elmhurst Energy" />
+                    </div>
+                    <ul class="links">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/book-epc">Book Now</a></li>
+                        <li>
+                            Website by
+                            <strong
+                                ><a
+                                    href="https://www.niccoates.uk"
+                                    target="_blank"
+                                    >Nic Coates</a
+                                ></strong
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/javascripts/app.js" type="text/javascript"></script>
+        <script>
+            function toggleNav() {
+                var nav = document.querySelector("header ul.nav");
+                nav.classList.toggle("show");
+            }
+        </script>
+    </body>
 </html>
