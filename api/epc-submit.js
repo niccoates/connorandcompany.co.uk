@@ -56,7 +56,7 @@ module.exports = async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Connor & Company <bookings@connorandcompany.co.uk>",
+        from: "Connor & Company <bookings@e.connorandcompany.co.uk>",
         to: process.env.EPC_TO_EMAIL,
         reply_to: email,
         subject: `New EPC booking: ${name}`,
