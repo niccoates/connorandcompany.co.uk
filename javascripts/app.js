@@ -1,5 +1,5 @@
 var form = document.getElementById('joinForm');
-var url = 'https://kn20faihs8.execute-api.eu-west-2.amazonaws.com/prod/epc-submit';
+var url = '/api/epc-submit';
 var formResponse = document.getElementById('form-response')
 var submit = document.getElementById('submit')
 
